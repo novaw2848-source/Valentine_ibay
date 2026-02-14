@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Valentine Untuk Ibay 💕</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: linear-gradient(pink, #ff99cc);
+    text-align: center;
+}
+
+.chat-box {
+    width: 320px;
+    margin: auto;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px gray;
+}
+
+.msg {
+    background: #ffe6f0;
+    margin: 6px;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+button {
+    background: hotpink;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h2>💖 Happy Valentine Ibay (Ibal Sayang) 💖</h2>
+
+<audio autoplay loop>
+<source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3">
+</audio>
+
+<div class="chat-box" id="chat">
+<div class="msg">Aku : Hai Ibay 😚 Happy Valentine ya!</div>
+<div class="msg">Aku : Aku punya game kecil buat kamu hehe 💕</div>
+</div>
+
+<br>
+
+<button onclick="game()">🎮 Main Game Mini</button>
+<button onclick="kirimWA()">📱 Kirim ke WhatsApp</button>
+
+<script>
+
+function game(){
+let jawab = prompt("Siapa yang paling manja?\n1. Ibay\n2. Aku");
+let chat = document.getElementById("chat");
+
+if(jawab == "1"){
+chat.innerHTML += '<div class="msg">Ibay : Aku dong 😝</div>';
+chat.innerHTML += '<div class="msg">Aku : Iyaaa Ibal sayang emang paling gemes 💕</div>';
+}
+else{
+chat.innerHTML += '<div class="msg">Ibay : Kamu dong 😆</div>';
+chat.innerHTML += '<div class="msg">Aku : Hehe aku cuma manja ke Ibay ❤️</div>';
+}
+
+chat.innerHTML += '<div class="msg">Aku : Makasih ya sudah hadir di hidup aku 🥺💕</div>';
+chat.innerHTML += '<div class="msg">Aku : Semoga kita selalu bareng terus 💖</div>';
+}
+
+function kirimWA(){
+let pesan = "Happy Valentine Ibay (Ibal Sayang) 💕\nAku sayang banget sama kamu 😚";
+let url = "https://wa.me/?text=" + encodeURIComponent(pesan);
+window.open(url, "_blank");
+}
+
+</script>
+
+</body>
+  </html>
+  
